@@ -1,2 +1,20 @@
-# Flutter-Dart-Specialization-Packt
-My hands-on projects and journey through the Packt Flutter &amp; Dart Specialization on Coursera. Covering UI, State Management, SQLite, and Firebase.
+# 📱 Flutter & Dart Specialization Journey
+
+This repository tracks my progress in the **Packt Specialization** on Coursera.
+
+## 🚀 Key Projects
+* **Book Tracker:** Using Google Books API and SQLite for local storage.
+* **Water Intake Tracker:** Real-time data sync with Firebase and visual charts.
+* **Movie App:** Handling JSON data and advanced navigation.
+* **Tip Calculator:** Focused on State Management (Provider) and Clean Code.
+
+## 🛠️ Tech Stack
+* **State Management:** Provider.
+* **Database:** SQLite & Firebase Realtime Database.
+- **Languages:** Dart (OOP, Async, Null Safety).
+- **Tools:** REST APIs, JSON Parsing, Custom UI Widgets.
+
+## 🎓 About Me
+**Amr (Sherif) Elsherif**
+Team Leader & Flutter Developer Intern. 
+Building professional apps with a focus on clean architecture.
