@@ -15,6 +15,6 @@ This repository tracks my progress in the **Packt Specialization** on Coursera.
 - **Tools:** REST APIs, JSON Parsing, Custom UI Widgets.
 
 ## 🎓 About Me
-**Amr (Sherif) Elsherif**
-Team Leader & Flutter Developer Intern. 
+**Amr Fathy Elsherif**
+Team Leader & Flutter Developer Intern @ DEPI. 
 Building professional apps with a focus on clean architecture.
