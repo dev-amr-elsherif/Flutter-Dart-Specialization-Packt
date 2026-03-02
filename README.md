@@ -5,11 +5,12 @@
 <img src="https://skillicons.dev/icons?i=flutter,dart,firebase,sqlite,vscode&theme=dark" alt="Core Tech Stack"/>
   </a>
 
-  <br><br>
+<br><br>
 
-  <img src="roadmap1.png" width="800" alt="Flutter & Dart Packt Specialization Roadmap"/>
+  <img src="roadmap.png" width="800" alt="Flutter & Dart Packt Specialization Roadmap"/>
 
-  <br><br>
+<br><br>
+
   <p><i>A comprehensive repository documenting my hands-on journey through the <b>"Flutter & Dart - Complete App Development"</b> Specialization by Packt on Coursera. This monorepo contains all the projects, source code, and study notes from mastering Dart OOP to full-stack Firebase integration.</i></p>
 
 </div>
@@ -21,21 +22,27 @@
 # 📚 Course Series Breakdown
 
 ### 1️⃣ Phase 1: Getting Started with Flutter & Dart
+
 Focused on the core fundamentals of the Dart programming language and the Flutter framework environment.
+
 - 🎯 **Key Learnings:** Flutter environment setup, Dart basics (Variables, Functions, OOP), Asynchronous programming, Widget tree, and Stateful vs. Stateless widgets.
 - 🚀 **Projects Built:** Fortune Cookie App, Tip Calculator (V1).
 
 ---
 
 ### 2️⃣ Phase 2: Advanced Flutter UI and State Management
+
 Transitioned from basic static UIs to managing complex app states and parsing external data.
+
 - 🎯 **Key Learnings:** Deep dive into the `Provider` package, dynamic theming (Dark/Light modes), JSON parsing, dynamic lists with `ListView`, complex navigation, and Dart OOP (Inheritance, Overriding).
 - 🚀 **Projects Built:** Refactored Tip Calculator (with Provider & Theming), Movie App.
 
 ---
 
 ### 3️⃣ Phase 3: Data Persistence and Firebase Integration
+
 Covered local and cloud data storage, transforming static apps into persistent, dynamic applications.
+
 - 🎯 **Key Learnings:** Local storage using `SQLite`, integrating `Firebase Realtime Database` via HTTP requests, consuming RESTful APIs (Google Books API), robust exception handling, and data visualization (Bar Charts).
 - 🚀 **Projects Built:** Book Tracker App, Water Intake Tracker App.
 
@@ -82,14 +89,14 @@ Covered local and cloud data storage, transforming static apps into persistent, 
   <img src="https://img.shields.io/badge/Provider-000000?style=for-the-badge&logo=flutter&logoColor=00F0FF" alt="Provider" />
   <img src="https://img.shields.io/badge/Clean_Code_Principles-000000?style=for-the-badge&logo=codeforces&logoColor=7A5CFF" alt="Clean Code" />
 
-  <br><br>
+<br><br>
 
   <h3>🌐 Networking & Data Handling</h3>
   <img src="https://img.shields.io/badge/RESTful_APIs-000000?style=for-the-badge&logo=json&logoColor=7A5CFF" alt="REST APIs" />
   <img src="https://img.shields.io/badge/HTTP_Requests-000000?style=for-the-badge&logo=dart&logoColor=00F0FF" alt="HTTP" />
   <img src="https://img.shields.io/badge/SQLite_(Local)-000000?style=for-the-badge&logo=sqlite&logoColor=7A5CFF" alt="SQLite" />
 
-  <br><br>
+<br><br>
 
   <h3>🔥 Cloud Services & UI Tools</h3>
   <img src="https://img.shields.io/badge/Firebase_Realtime_DB-000000?style=for-the-badge&logo=firebase&logoColor=00F0FF" alt="Firebase RTDB" />
@@ -101,7 +108,6 @@ Covered local and cloud data storage, transforming static apps into persistent, 
 <br>
 <hr>
 <br>
-
 
 <h3 align="center">🤝 Let's Connect</h3>
 
