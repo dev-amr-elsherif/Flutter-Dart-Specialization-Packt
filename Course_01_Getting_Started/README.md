@@ -41,12 +41,38 @@ This course serves as the launchpad into mobile engineering with Flutter. The fo
   <table border="0" cellpadding="15">
     <tr>
       <td width="50%" valign="top">
-        <h3>🥠 Fortune Cookie App</h3>
-        <p>A foundational app introducing interactive UIs. Focuses on handling user events, randomizing list data in Dart, basic state manipulation using <code>setState()</code>, and integrating local image assets into the Flutter environment.</p>
+        <h3><a href="./fortune_cookie">🥠 Fortune Cookie App</a></h3>
+        <p>A foundational app bridging pure Dart concepts with interactive Flutter UIs.</p>
+        <b>Key Features & Tech:</b>
+        <ul>
+          <li>Handling user events & interactivity</li>
+          <li>List data randomization in Dart</li>
+          <li>Local state via <code>setState()</code></li>
+          <li>Local image asset integration</li>
+        </ul>
       </td>
       <td width="50%" valign="top">
-        <h3>💵 Tip Calculator (V1)</h3>
-        <p>A robust utility application demonstrating complex UI composition. Features include handling user input via <code>TextField</code> and <code>Slider</code>, dynamic mathematical calculations, basic theming with <code>BuildContext</code>, and extensive widget refactoring using OOP principles.</p>
+        <h3><a href="./tip_calculator">💵 Tip Calculator (V1)</a></h3>
+        <p>A robust utility application demonstrating complex UI composition and logic.</p>
+        <b>Key Features & Tech:</b>
+        <ul>
+          <li>User input via <code>TextField</code> & <code>Slider</code></li>
+          <li>Dynamic mathematical calculations</li>
+          <li>Basic theming using <code>BuildContext</code></li>
+          <li>Extensive widget refactoring (OOP)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" align="center" valign="bottom">
+        <a href="./fortune_cookie">
+          <img src="https://img.shields.io/badge/📂_View_Project-0052CC?style=for-the-badge&logo=github" alt="View Fortune Cookie" />
+        </a>
+      </td>
+      <td width="50%" align="center" valign="bottom">
+        <a href="./tip_calculator">
+          <img src="https://img.shields.io/badge/📂_View_Project-0052CC?style=for-the-badge&logo=github" alt="View Tip Calculator" />
+        </a>
       </td>
     </tr>
   </table>
@@ -55,7 +81,6 @@ This course serves as the launchpad into mobile engineering with Flutter. The fo
 <br>
 <hr>
 <br>
-
 # 📚 Modules Covered
 
 1. **Introduction & Resources:** Overview of the specialization and utilizing official Flutter documentation.
@@ -93,3 +118,4 @@ This course serves as the launchpad into mobile engineering with Flutter. The fo
   </a>
 
 </div>
+
