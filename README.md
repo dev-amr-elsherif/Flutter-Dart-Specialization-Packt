@@ -7,7 +7,7 @@
 
   <br><br>
 
-  <img src="roadmap.png" width="800" alt="Flutter & Dart Packt Specialization Roadmap"/>
+  <img src="roadmap1.png" width="800" alt="Flutter & Dart Packt Specialization Roadmap"/>
 
   <br><br>
   <p><i>A comprehensive repository documenting my hands-on journey through the <b>"Flutter & Dart - Complete App Development"</b> Specialization by Packt on Coursera. This monorepo contains all the projects, source code, and study notes from mastering Dart OOP to full-stack Firebase integration.</i></p>
