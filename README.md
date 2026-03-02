@@ -1,8 +1,9 @@
 <div align="center">
+
   <h1>📱 Flutter & Dart Specialization Packt</h1>
 
   <a href="https://skillicons.dev">
-<img src="https://skillicons.dev/icons?i=flutter,dart,firebase,sqlite,vscode&theme=dark" alt="Core Tech Stack"/>
+    <img src="https://skillicons.dev/icons?i=flutter,dart,firebase,sqlite&theme=dark" alt="Core Tech Stack"/>
   </a>
 
 <br><br>
@@ -21,30 +22,33 @@
 
 # 📚 Course Series Breakdown
 
-### 1️⃣ Phase 1: Getting Started with Flutter & Dart
+### 1️⃣ [Phase 1: Getting Started with Flutter & Dart](./Course_01_Getting_Started)
 
 Focused on the core fundamentals of the Dart programming language and the Flutter framework environment.
 
 - 🎯 **Key Learnings:** Flutter environment setup, Dart basics (Variables, Functions, OOP), Asynchronous programming, Widget tree, and Stateful vs. Stateless widgets.
 - 🚀 **Projects Built:** Fortune Cookie App, Tip Calculator (V1).
+- 📂 **[Explore Phase 1 Projects & Notes ➡️](./Course_01_Getting_Started)**
 
 ---
 
-### 2️⃣ Phase 2: Advanced Flutter UI and State Management
+### 2️⃣ [Phase 2: Advanced Flutter UI and State Management](./Course_02_Advanced_UI_State)
 
 Transitioned from basic static UIs to managing complex app states and parsing external data.
 
 - 🎯 **Key Learnings:** Deep dive into the `Provider` package, dynamic theming (Dark/Light modes), JSON parsing, dynamic lists with `ListView`, complex navigation, and Dart OOP (Inheritance, Overriding).
 - 🚀 **Projects Built:** Refactored Tip Calculator (with Provider & Theming), Movie App.
+- 📂 **[Explore Phase 2 Projects & Notes ➡️](./Course_02_Advanced_UI_State)**
 
 ---
 
-### 3️⃣ Phase 3: Data Persistence and Firebase Integration
+### 3️⃣ [Phase 3: Data Persistence and Firebase Integration](./Course_03_Data_Persistence)
 
 Covered local and cloud data storage, transforming static apps into persistent, dynamic applications.
 
 - 🎯 **Key Learnings:** Local storage using `SQLite`, integrating `Firebase Realtime Database` via HTTP requests, consuming RESTful APIs (Google Books API), robust exception handling, and data visualization (Bar Charts).
 - 🚀 **Projects Built:** Book Tracker App, Water Intake Tracker App.
+- 📂 **[Explore Phase 3 Projects & Notes ➡️](./Course_03_Data_Persistence)**
 
 <br>
 <hr>
