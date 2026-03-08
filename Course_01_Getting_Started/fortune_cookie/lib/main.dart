@@ -50,16 +50,11 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _currentFortune = _fortuneList[fortune];
     });
-    print(_currentFortune);
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-      //   title: Text('Fortune App'),
-      // ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -74,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  '$_currentFortune',
+                  _currentFortune,
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
               ),
@@ -86,11 +81,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      // floatingActionButton: FloatingActionButton(
-      //   onPressed: _randomFortune,
-      //   tooltip: 'Increment',
-      //   child: const Icon(Icons.navigate_next_rounded),
-      // ),
     );
   }
 }
