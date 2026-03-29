@@ -9,11 +9,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(context.widget);
     return MaterialApp(
       title: 'UTip',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.amber),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
       home: const UTip(),
@@ -31,8 +30,12 @@ class UTip extends StatefulWidget {
 class _UTipState extends State<UTip> {
   @override
   Widget build(BuildContext context) {
-    print(context.widget);
     var theme = Theme.of(context);
+    //Add Style
+    final textStyle = theme.textTheme.titleMedium?.copyWith(
+      color: theme.colorScheme.onPrimary,
+      fontWeight: FontWeight.bold,
+    );
     return Scaffold(
       appBar: AppBar(title: const Text("UTip")),
       body: Padding(
@@ -48,13 +51,13 @@ class _UTipState extends State<UTip> {
               ),
               child: Column(
                 children: [
-                  Text(
-                    "Total per person",
-                    style: theme.textTheme.displayMedium,
-                  ),
+                  Text("Total per person", style: textStyle),
                   Text(
                     "\$23.05",
-                    style: Theme.of(context).textTheme.displaySmall,
+                    style: textStyle?.copyWith(
+                      color: theme.colorScheme.onPrimary,
+                      fontSize: theme.textTheme.displaySmall!.fontSize,
+                    ),
                   ),
                 ],
               ),
