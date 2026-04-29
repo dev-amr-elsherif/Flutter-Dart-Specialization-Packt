@@ -31,6 +31,8 @@ class UTip extends StatefulWidget {
 class _UTipState extends State<UTip> {
   int _personCount = 1;
 
+  double _tipPercentage = 0.0;
+
   void increment() {
     setState(() {
       _personCount++;
@@ -95,16 +97,19 @@ class _UTipState extends State<UTip> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    TextField(
-                      decoration: const InputDecoration(
-                        border: OutlineInputBorder(),
-                        prefixIcon: Icon(Icons.attach_money_outlined),
-                        labelText: "Bill Amount",
+                    Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: TextField(
+                        decoration: const InputDecoration(
+                          border: OutlineInputBorder(),
+                          prefixIcon: Icon(Icons.attach_money_outlined),
+                          labelText: "Bill Amount",
+                        ),
+                        keyboardType: TextInputType.number,
+                        onChanged: (String value) {
+                          print("Value: $value");
+                        },
                       ),
-                      keyboardType: TextInputType.number,
-                      onChanged: (String value) {
-                        print("Value: $value");
-                      },
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 10),
@@ -118,8 +123,36 @@ class _UTipState extends State<UTip> {
                             onDecrement: decrement,
                             onIncrement: increment,
                           ),
+
+                          //  === Tip Section ===
                         ],
                       ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("data", style: theme.textTheme.titleMedium),
+                          Text("\$20.21", style: theme.textTheme.titleMedium),
+                        ],
+                      ),
+                    ),
+                    Text(
+                      "${(_tipPercentage * 100).round()}%",
+                      style: theme.textTheme.titleMedium,
+                    ),
+                    Slider(
+                      value: _tipPercentage,
+                      onChanged: (value) {
+                        setState(() {
+                          _tipPercentage = value;
+                        });
+                      },
+                      min: 0.0,
+                      max: 0.5,
+                      divisions: 5,
+                      label: '${(_tipPercentage * 100).round()}',
                     ),
                   ],
                 ),
