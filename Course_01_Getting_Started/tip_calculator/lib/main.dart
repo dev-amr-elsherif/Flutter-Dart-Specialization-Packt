@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:tip_calculator/widgets/person_counter.dart';
 
+// === Application Entry Point ===
 void main() {
   runApp(const MyApp());
 }
 
+// === Main App Widget ===
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -21,6 +23,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// === UTip Main Screen ===
 class UTip extends StatefulWidget {
   const UTip({super.key});
 
@@ -29,10 +32,11 @@ class UTip extends StatefulWidget {
 }
 
 class _UTipState extends State<UTip> {
+  // === State Variables ===
   int _personCount = 1;
-
   double _tipPercentage = 0.0;
 
+  // === State Methods (Counter Controls) ===
   void increment() {
     setState(() {
       _personCount++;
@@ -47,6 +51,7 @@ class _UTipState extends State<UTip> {
     });
   }
 
+  // === Build Method ===
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
@@ -55,13 +60,18 @@ class _UTipState extends State<UTip> {
       color: theme.colorScheme.onPrimary,
       fontWeight: FontWeight.bold,
     );
+
     return Scaffold(
+      // --- Top App Bar ---
       appBar: AppBar(title: const Text("UTip")),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            // =====================================
+            // === Top Section: Total Per Person ===
+            // =====================================
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
@@ -84,6 +94,10 @@ class _UTipState extends State<UTip> {
                 ),
               ),
             ),
+
+            // ==============================================
+            // === Bottom Section: Controls & Calculation ===
+            // ==============================================
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
@@ -97,6 +111,7 @@ class _UTipState extends State<UTip> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    // --- Bill Amount Input Field ---
                     Padding(
                       padding: const EdgeInsets.all(12.0),
                       child: TextField(
@@ -111,6 +126,8 @@ class _UTipState extends State<UTip> {
                         },
                       ),
                     ),
+
+                    // --- Split Bill Section ---
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 10),
                       child: Row(
@@ -128,6 +145,8 @@ class _UTipState extends State<UTip> {
                         ],
                       ),
                     ),
+
+                    // --- Tip Amount Display Section ---
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 10),
                       child: Row(
@@ -138,10 +157,14 @@ class _UTipState extends State<UTip> {
                         ],
                       ),
                     ),
+
+                    // --- Tip Percentage Text ---
                     Text(
                       "${(_tipPercentage * 100).round()}%",
                       style: theme.textTheme.titleMedium,
                     ),
+
+                    // --- Tip Percentage Slider ---
                     Slider(
                       value: _tipPercentage,
                       onChanged: (value) {
