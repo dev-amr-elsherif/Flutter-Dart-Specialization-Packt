@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tip_calculator/widgets/bill_amount_field.dart';
 import 'package:tip_calculator/widgets/person_counter.dart';
+import 'package:tip_calculator/widgets/tip_row.dart';
 import 'package:tip_calculator/widgets/tip_slider.dart';
 import 'package:tip_calculator/widgets/totalP_per_person.dart';
 
@@ -120,39 +121,16 @@ class _UTipState extends State<UTip> {
                     // --- Split Bill Section ---
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text("Split", style: theme.textTheme.titleMedium),
-                          PersonCounter(
-                            theme: theme,
-                            personCount: _personCount,
-                            onDecrement: decrement,
-                            onIncrement: increment,
-                          ),
-
-                          //  === Tip Section ===
-                        ],
+                      child: PersonCounter(
+                        theme: theme,
+                        personCount: _personCount,
+                        onDecrement: decrement,
+                        onIncrement: increment,
                       ),
                     ),
 
                     // --- Tip Amount Display Section ---
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            "Tip Amount",
-                            style: theme.textTheme.titleMedium,
-                          ),
-                          Text(
-                            "\$$totalTip",
-                            style: theme.textTheme.titleMedium,
-                          ),
-                        ],
-                      ),
-                    ),
+                    TipRow(theme: theme, totalTip: totalTip),
 
                     // --- Tip Percentage Text ---
                     Text(

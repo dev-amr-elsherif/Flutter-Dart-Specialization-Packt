@@ -17,7 +17,7 @@ class TipSlider extends StatelessWidget {
       onChanged: onChanged,
       min: 0.0,
       max: 0.5,
-      divisions: 5,
+      divisions: 10,
       label: '${(_tipPercentage * 100).round()}',
     );
   }
