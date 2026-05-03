@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tip_calculator/widgets/bill_amount_field.dart';
 import 'package:tip_calculator/widgets/person_counter.dart';
 import 'package:tip_calculator/widgets/tip_slider.dart';
+import 'package:tip_calculator/widgets/totalP_per_person.dart';
 
 // === Application Entry Point ===
 void main() {
@@ -85,28 +86,7 @@ class _UTipState extends State<UTip> {
             // =====================================
             // === Top Section: Total Per Person ===
             // =====================================
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                padding: const EdgeInsets.all(20),
-                decoration: BoxDecoration(
-                  color: theme.colorScheme.inversePrimary,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Column(
-                  children: [
-                    Text("Total per person", style: textStyle),
-                    Text(
-                      "\$$total",
-                      style: textStyle?.copyWith(
-                        color: theme.colorScheme.onPrimary,
-                        fontSize: theme.textTheme.displaySmall!.fontSize,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
+            TotalPerPerson(theme: theme, textStyle: textStyle, total: total),
 
             // ==============================================
             // === Bottom Section: Controls & Calculation ===
