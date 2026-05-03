@@ -37,6 +37,7 @@ class _UTipState extends State<UTip> {
   // === State Variables ===
   int _personCount = 1;
   double _tipPercentage = 0.0;
+  double _billAmount = 0.0;
 
   // === State Methods (Counter Controls) ===
   void increment() {
@@ -53,10 +54,20 @@ class _UTipState extends State<UTip> {
     });
   }
 
+  double calculateTotalPerPerson() {
+    return (((_billAmount * _tipPercentage) + (_billAmount) / _personCount));
+  }
+
+  double totalTipFun() {
+    return ((_billAmount * _tipPercentage));
+  }
+
   // === Build Method ===
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
+    double total = calculateTotalPerPerson();
+    double totalTip = totalTipFun();
     //Add Style
     final textStyle = theme.textTheme.titleMedium?.copyWith(
       color: theme.colorScheme.onPrimary,
@@ -86,7 +97,7 @@ class _UTipState extends State<UTip> {
                   children: [
                     Text("Total per person", style: textStyle),
                     Text(
-                      "\$23.05",
+                      "\$$total",
                       style: textStyle?.copyWith(
                         color: theme.colorScheme.onPrimary,
                         fontSize: theme.textTheme.displaySmall!.fontSize,
@@ -117,9 +128,11 @@ class _UTipState extends State<UTip> {
                     Padding(
                       padding: const EdgeInsets.all(12.0),
                       child: BillAmountField(
-                        bollAmount: '',
-                        onChanged: (String value) {
-                          print("Amount: $value");
+                        bollAmount: _billAmount.toString(),
+                        onChanged: (value) {
+                          setState(() {
+                            _billAmount = double.parse(value);
+                          });
                         },
                       ),
                     ),
@@ -149,8 +162,14 @@ class _UTipState extends State<UTip> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("data", style: theme.textTheme.titleMedium),
-                          Text("\$20.21", style: theme.textTheme.titleMedium),
+                          Text(
+                            "Tip Amount",
+                            style: theme.textTheme.titleMedium,
+                          ),
+                          Text(
+                            "\$$totalTip",
+                            style: theme.textTheme.titleMedium,
+                          ),
                         ],
                       ),
                     ),
